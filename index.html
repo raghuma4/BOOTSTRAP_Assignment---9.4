@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My blog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Use bootstrap minified css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+
+	<!-- Latest compiled JavaScript --> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- External style sheet -->
+	<link rel="stylesheet" type="text/css" href="MyBlogStyles.css"> 
+</head>
+<body>
+
+<!-- a fixed navigation bar at the top -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   	<div class="navbar-header">       
+  		<a class="navbar-brand" href="#">Web development blog</a>   
+	</div>
+
+	<!-- unordered list of page links (navigation to different pages)  -->
+	<ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="AboutPage.html">About us</a></li>
+        <li><a href="ContactPage.html">Contact</a></li> 
+        <li><a href="ServicesPage.html">Services</a></li> 
+        <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </div>
+      </div>
+    </form>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+
+	<!-- using bootstrap jumbotron class to define the blog heading -->
+	<div class="jumbotron">
+		<h1>Learn Web devlopment</h1>		
+	</div>
+
+	<!-- dividing the grid into 3 columns each one occupying 4 blocks (col-md-4) -->
+	<div class="col-md-4">
+	   <h4><strong>HTML5</strong></h4>
+	 	<p>	HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard </p>
+	 	<input type="button" name="HTML5" id="btnHTML5" class="btn btn-success btn-lg" value="Learn HTML5" onclick="window.open('https://www.w3schools.com/html/html5_intro.asp')">
+	</div>
+
+	<div class="col-md-4">
+		 <h4><strong>CSS3</strong></h4>
+		<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</p>	
+		<input type="button" name="CSS3" id="btnCSS3" class="btn btn-success btn-lg" value="Learn CSS3" onclick="window.open('https://www.w3schools.com/css/css3_intro.asp')"> 
+	</div>
+
+	<div class="col-md-4">
+		 <h4><strong>JavaScript</strong></h4>
+		<p>JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, object-based, multi-paradigm, and interpreted programming language.</p>
+		<input type="button" name="JavaScript" id="btnJavaScript" class="btn btn-success btn-lg" value="Learn JavaScript" onclick="window.open('https://www.w3schools.com/js/')">
+	</div>
+
+</div>
+
+<!-- fixed footer (using nav bar) -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<!-- using glyphicon for copyrught symbol -->
+  <div id="footerdiv" class="copyright-fluid">
+   <p>
+   	All Rights Reserved <span class="glyphicon glyphicon-copyright-mark"></span>
+   	2000 - 2017 
+   	<span style="float:right;margin-right: 20px;"><strong>My Blog</strong></span>
+   </p>
+   
+  </div>
+</nav>
+</body>
+</html>
